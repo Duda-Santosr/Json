@@ -10,7 +10,24 @@
     <form action="salvar.php" method="post">
         Nome: <input type="text" name="nome" required> <br><br>
         Idade: <input type="number" name="idade" required> <br><br>
+        Ano: <input type="number" name="ano" required> <br><br>
         <button type="submit">Salvar</button>
     </form>
+
+    <h2>Usuarios Cadastrados</h2>
+    <ul>
+        <?php
+            $dados = json_decode(file_get_contents("dados.json"), true);
+
+            if(!empty($dados)){
+                foreach($dados as $usuario){
+                    echo "<li> {$usuario['nome']} - {$usuario['idade']} anos</li> ";
+                }
+            } else{
+                echo "<li> nenhum usuário cadastrado ainda.</li>";
+            }
+
+        ?>
+    </ul>
 </body>
 </html>

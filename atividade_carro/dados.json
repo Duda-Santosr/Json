@@ -1,0 +1,19 @@
+[
+    {
+        "nome": "Nivus",
+        "idade": "2024",
+        "preco": "70000"
+    },
+    {
+        "nome": "Nivus",
+        "idade": "2024",
+        "preco": "70.000",
+        "descricao": "Carro Moderno"
+    },
+    {
+        "nome": "Civic",
+        "ano": null,
+        "preco": "80.000",
+        "descricao": "\u00e9 um carro da Honda que foi criado para ser um carro familiar, econ\u00f4mico e confi\u00e1vel."
+    }
+]
